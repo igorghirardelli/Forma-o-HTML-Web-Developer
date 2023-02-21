@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <meter></meter>
+    <progress id = "progress"> max="100"  min "0" value "0" </progress>
+
+    <script>
+        var progress = document.getElementById('progress');
+        const Interval = setInterval(()=>{
+            progress.value +=5;
+            if(progress.value >= 100){
+                alert('carregamento com sucesso')
+                clearInterval(Interval);
+            }
+        }, 1000)
+        
+
+    </script>
+
+
+</body>
+</html>
