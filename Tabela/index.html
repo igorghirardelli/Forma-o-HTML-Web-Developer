@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    
+    <style>
+        table thead th {
+            background-color: black;
+            color: white ;
+        }
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: gray;
+        }
+        table{
+            -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, -2px -7px 15px 5px rgba(28,28,28,0); 
+box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, -2px -7px 15px 5px rgba(28,28,28,0);
+        }
+    </style>
+
+</head>
+<body>
+
+    <table border="1" width="100" >
+        <caption> Tabela dos alunos </caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                
+            </tr> 
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>igor</td>
+                <td>25</td>  
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>23</td>  
+            </tr>
+            <tr>
+                <td>junior</td>
+                <td>20</td>  
+            </tr>
+            <tr>
+                <td>yago</td>
+                <td>27</td>  
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
