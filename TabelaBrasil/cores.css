@@ -1,0 +1,41 @@
+
+table {
+    margin: auto;
+    font-family: Arial;
+    font-size: 12px;
+    width: 600px;
+    
+}
+div {
+    background-color: #0D5188;
+    color: white;
+}
+
+table th {
+    background-color: #66C5E3;
+    color: black;
+
+}
+.numeros {
+    text-align: center;
+    background-color: #bfc3c4;
+    width: 10%;
+}
+
+.cidade {
+    
+    background-color:#C7E7F3  ;
+    color: #0D5188  ;
+    font-weight: bold;
+    
+}
+.cidade2 {
+    text-align: left;
+}
+
+.pop {
+    
+    width: 15%;
+    text-align: center;
+    background-color: #C7E7F3 ;
+}

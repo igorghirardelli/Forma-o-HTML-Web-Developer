@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cores.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <fieldset>     
+        
+            <tr>
+                <th>
+                    <h2 class="cabeçario">Ficha Cadastral</h2>
+                     <br>
+                </th>
+            </tr>
+        
+    
+    <table>
+    <form>  
+
+      
+
+            <div>
+            <label class="mov">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="55" size="50">
+            </div>
+
+            
+
+            <br>  
+            <div>
+            <label class="mov">RG:</label>
+            <input type="text" name="rg" id="rg" maxlength="13" size="10" >
+            
+            <label class="mov3">C P F:</label>
+                <input type="text" name="cpf" id="cpf" maxlength="13" size="13">
+            </div>
+
+            <br>
+            <div>
+                <label class="mov">Endereço:</label>
+                <input type="text" name="endereço" id="endereço" maxlength="55" size="50" >
+            </div>
+        
+            <br>
+
+            <div>
+                
+                <label>Sexo:</label>
+                <select name="Sexo" class="aux">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>    
+                
+                <label class="mov2">Data Nascimento:</label>
+                <input type="text" name="Data" id="Data" size="13"> <br>
+                <br>
+                
+                
+                
+            </div>
+
+        <label class="mov">Situação Civil </label>
+        <label>
+            <input  type="radio" name="Civil" value="Solteiro" >Solteiro(a)
+        </label>
+        <label >
+            <input class="mov4" type="radio" name="Civil" value="Casado">Casado(a)
+        </label>
+        <label>
+            <input class="mov5"type="radio" name="Civil" value="Viuvo">Viuvo(a) <br>
+        </label>
+
+        <br>
+
+        <div class="limpar">
+            <label >
+                <input type="reset" name="limpar" value="Limpar Dados">
+            </label>
+        </div>
+            
+    </form>
+    </table>
+</fieldset>
+
+
+
+
+</body>
+</html>
