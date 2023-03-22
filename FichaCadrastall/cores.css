@@ -29,13 +29,15 @@ div {
 .mov {  /*Alinhar o NOME, RG, ENDEREÇO, SITUAÇÃO CIVIL */
    
     width: 110px;
-    margin-right: 25px;
+    margin-right: 31px;
     display: inline-block;
 }
 
 .mov2  {  /* Alinhando o input da data de nascimento com o input do cpf*/
     
-    margin-right: 9px;
+    margin-right: 16px;
+    
+    
     
     
           
