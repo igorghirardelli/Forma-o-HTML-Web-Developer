@@ -1,0 +1,39 @@
+<html>
+    <head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Adicionando Javascript -->
+    </head>
+
+    <body>
+    <!-- Inicio do formulario -->
+      <form>
+        <div>
+          <label class="mov">Nome:</label>
+          <input type="text" name="nome" id="nome" maxlength="55" size="50" class="campo">
+          </div>
+
+        <label>Cep: </label>
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);"><br/>
+        <label>logradouro: </label>
+        <input name="logradouro" type="text" id="logradouro" size="60" class="campo"><br/>
+        <label>Bairro: </label>
+        <input name="bairro" type="text" id="bairro" size="40"class="campo"><br/>
+        <label>Cidade: </label>
+        <input name="cidade" type="text" id="cidade" size="40" class="campo"><br/>
+        <label>Estado: </label>
+        <input name="uf" type="text" id="uf" size="2" class="campo"/><br/>
+        <label>IBGE: </label>
+        <input name="ibge" type="text" id="ibge" size="8" class="campo"><br/>
+  
+        <form class="limpar">
+          <button type="button" name="apagar" onclick="apagardados();">Limpar Dados</button>
+        </form>
+        <button type="submit" name="enviar" id="btn" value="Enviar" onclick="validar();validarbox()">Enviar Dados</button>
+        
+      </form>
+    </body>
+    <script src="about.js"></script>
+    </html>

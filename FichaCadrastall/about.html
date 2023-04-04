@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,47 +12,55 @@
 
 </head>
 <body>
-    
-    <fieldset>     
         
-            <tr>
-                <th>
-                    <h2 class="cabeçario">Ficha Cadastral</h2>
-                     <br>
-                </th>
-            </tr>
-        
-    
-    <table>
-    <form>  
+<main>
 
-      
-
-            <div>
+            <h2 class="cabeçario">Ficha Cadastral</h2>
+            <br>
+                      
+<div class="cards">
+            <div class="lineinput">
             <label class="mov">Nome:</label>
-            <input type="text" name="nome" id="nome" maxlength="55" size="50" class="campo">
+            <input type="text" name="nome" id="nome" maxlength="55" size="50" class="campo" required>
             </div>
-
-            
-
             <br>  
-            <div>
+            <div class="lineinput">
             <label class="mov">RG:</label>
-            <input type="text" name="rg" id="rg" maxlength="13" size="10" class="campo">
+            <input type="text" name="rg" id="rg" maxlength="12" size="10" class="campo">
             
             <label class="mov3">C P F:</label>
-                <input type="text" name="cpf" id="cpf" maxlength="14" size="13" class="campo">
+                <input type="text" name="cpf" id="cpf" maxlength="14" size="13" class="campo"  / required>
             </div>
 
             <br>
-            <div>
+            <div class="lineinput">
+                <label class="mov">Cep: </label>
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"class="campo" onblur="pesquisacep(this.value);">
+                                      
+                    <label class="mover">IBGE:</label>
+                    <input name="ibge" type="text" id="ibge" size="13">
+            </div>
+            <br>
+
+            <div class="lineinput">
                 <label class="mov">Endereço:</label>
-                <input type="text" name="endereço" id="endereço" maxlength="55" size="50" class="campo">
+                <input name="rua" type="text" id="rua" size="34" class="campo">
+                       
+                <label class="">Estado: </label>
+                <input name="uf" type="text" id="uf" size="1" class="campo">
             </div>
-        
             <br>
+            
+                <div class="lineinput">
+                    <label class="mov">Bairro: </label>
+                    <input name="bairro" type="text" id="bairro" size="20" class="campo">
+                    <label>Cidade:</label>
+                    <input name="cidade" type="text" id="cidade" size="15" class="campo">
 
-            <div>
+                </div>
+                <br>
+
+            <div class="lineinput">
                 
                 <label>Sexo:</label>
                 <select name="Sexo" class="aux" id="sexo">
@@ -62,12 +70,17 @@
                 
                 <label class="mov2">Data Nascimento:</label>
                 <input type="text" name="Data" id="data" size="13" maxlength="10" class="campo"> <br>
-                <br>
-                
-                
-                
+                   
             </div>
-
+            <br>
+            
+            <div class="lineinput">
+                <label class="mov">Complemento:</label>
+                <input type="text" name="complemento" id="complemento" size="30" class="campo">
+            </div>
+                  
+            <br>
+        <div class="lineinput">  
         <label class="mov">Situação Civil </label>
         <label>
             <input type="radio" name="Civil" id="Civil" value="Solteiro" >Solteiro(a)
@@ -78,31 +91,32 @@
         <label >
             <input class="mov5"type="radio" name="Civil" id="Civil" value="Viuvo">Viuvo(a) <br>
         </label>
-
+        </div>  
+        <br>
+            <div class="limpar">
+                <button onclick="validar();validarbox();">Salvar</button>   
+                <button onclick="apagardados();">Cancelar</button>
+                
+                    <button>
+                    <a href="2pagina.html">TESTE</a>
+                    </button>
+                
+                
+            </div>
+            
+            
+            
+        <br>
         <br>
 
-        
 
-        <div class="limpar">
-             
-            
-            <button type="button" name="apagar" onclick="apagardados();">Limpar Dados</button>
-            <button type="submit" name="enviar" id="btn" value="Enviar" onclick="validar();validarbox()">Enviar Dados</button>
+      <div id="bottom-message">
+        
+      </div>  
+</div>       
             
 
-
-        </div>
-
-
-        
-        
-
-
-        
-            
-    </form>
-    </table>
-</fieldset>
+</main>
 
 
 

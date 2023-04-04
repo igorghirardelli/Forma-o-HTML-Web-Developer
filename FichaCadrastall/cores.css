@@ -1,50 +1,79 @@
+*{
+    margin: 0;
+    padding: 15;
+}
+body {
+   
+   background-image: url('imagem/gostei.avif');
+   background-repeat: no-repeat;
+   background-position: center right 20px;
+   background-size: 100%;
 
+   margin:auto;
+   
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: inset -5px -5px rgba(0,0,0,0.60);
+    width: 550px;   
+    font-family: Arial;
+
+  
+   
+   
+
+}
 .cabeçario {  /* cabeçario no meio com a fonte normal na cor preta */
             
             
     text-align: center;
+    
     font-family: Calibri;
     
+}
+.cards{
+    padding: 10px;
+    border: 3px solid black;
     
     
-       
+
+}
+.lineinput {
+ margin-bottom: 1px;
+    
+    
+
 }
 
-
- fieldset {
+     /*Eu fiz isso aqui só deixar um espaço maior entre eles  */
+div { 
     
-    width: 550px;
-    font-family: Arial;
-    
-    
-   
-    
-}
-div {
     padding: 1px;
-    
-    
-    
 }
 .mov {  /*Alinhar o NOME, RG, ENDEREÇO, SITUAÇÃO CIVIL */
    
     width: 110px;
     margin-right: 31px;
     display: inline-block;
+    
+    
 }
+.mover {  /*Empurrando para a direita o input do IBGE*/
+    
+    margin-right: 95px;
+    
+}
+
+
 
 .mov2  {  /* Alinhando o input da data de nascimento com o input do cpf*/
     
-    margin-right: 16px;
-    
-    
-    
-    
+    margin-right: 9px;
+     
           
 }
 .mov3 {  /*  alinanhndo o input do cpf com o input de data de nascimento */
     
-    margin-right: 98px
+    margin-right: 91px
     
 }
 .mov4 {  /* Alinhando o casado perto da letra A de " DATA" */
@@ -60,15 +89,66 @@ div {
 
 
 .limpar {  /* pegando o botao 100% dele e puxando pro meio*/
-    width: 100%;
+
     text-align: center;
+    
+    
+    
 }
-.aux { /* margin left para empurrar o input de sexo para a direta e o margin rigth para empurrar para a esquerda a Data de nascimento */
+
+.aux { /* margin left para empurrar o input de sexo para a direta e o margin rigth para empurrar para a direita a Data de nascimento */
    
     margin-left: 100px;
     margin-right: 24px;
 }
+button {
+    
+    border: 0px;
+    padding: 8px;
+    outline: 0;
+    background-color: rgb(20, 20, 20);
+    color: purple;
+    border-radius: 3px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: rgb(67, 65, 68);
+}
+.content{
+    margin-top: 15px;
+     
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+}
 
+table th{
+    background-color: #8b8787;
+    
+
+}
+table th, td {
+    padding: 1px 5px;
+    text-align: left;
+    
+}
+
+table td img{
+    width: 20px;
+
+}
+
+.center {
+    text-align: center;
+}   
+
+
+.limpar2 {
+    text-align: center;
+}
 
 
        

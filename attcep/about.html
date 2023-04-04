@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <title>ViaCEP</title>
+        </head>
+        <body>
+            <!-- Elemento ID que receberá o embed ViaCEP -->
+            <div id="viacep-embed"></div>
+            <script type='text/javascript'>    
+                //atribui elemento com ID "viacep-embed" no documento.
+                var elemento_pai = document.getElementById("viacep-embed");
+                //cria um novo elemento "iframe".
+                var iframe = document.createElement('iframe');
+                //insere o novo elemento "iframe" como filho do elemento "viacep-embed".
+                elemento_pai.appendChild(iframe);
+                //define atributos do "iframe".
+                iframe.setAttribute('src', 'https://viacep.com.br/embed/');
+                iframe.setAttribute('id', 'viacep-iframe');
+                iframe.setAttribute('scrolling', 'no');
+                iframe.style.width = '210px';
+                iframe.style.height = '190px';       
+                iframe.style.border = '1px dotted #888';
+                iframe.style.background = '#fcfcfc';
+            </script>
+        </body>
+    </html>
+    
+Fale

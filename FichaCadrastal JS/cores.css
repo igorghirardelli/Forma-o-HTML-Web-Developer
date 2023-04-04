@@ -12,7 +12,7 @@
 
 
  fieldset {
-    
+    border: 0px;
     width: 500px;
     font-family: Arial;
     
@@ -34,13 +34,13 @@ div {
 
 .mov2  {  /* Alinhando o input da data de nascimento com o input do cpf*/
     
-    margin-right: 20px;
+    margin-right: 10px;
     
           
 }
 .mov3 {  /*  alinanhndo o input do cpf com o input de data de nascimento */
     
-    margin-right: 100px
+    margin-right: 92px
     
 }
 .mov4 {  /* Alinhando o casado perto da letra A de " DATA" */
