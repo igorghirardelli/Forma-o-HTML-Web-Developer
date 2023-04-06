@@ -1,0 +1,115 @@
+body{
+    background-image: url(img/gostei.avif);
+    background-position: center right 20px;
+    background-size: 100%;
+    font-family: Arial;
+    width: 550px;
+    margin: auto;
+    
+}
+.mov {  /*Alinhar o NOME, RG, ENDEREÇO, SITUAÇÃO CIVIL */
+   
+    width: 110px;
+    margin-right: 31px;
+    display: inline-block;
+    
+    
+}
+.mov4 {  /* Alinhando o casado perto da letra A de " DATA" */
+
+    margin-left: 25px;
+
+}
+.mov5 {  /* alinhando o viuvo dentro da barra da data de nascimento */
+   
+    margin-left: 50px;
+}
+.body15{
+    align-items: center;
+}
+.title{
+    text-align: center;
+}
+.card{
+ 
+    margin:auto;
+
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: inset -5px -5px rgba(0,0,0,0.60);   
+ border: 1px solid #080505;
+ padding: 20px;
+ margin-top: 15px;
+ border-radius: 5px;
+
+}
+
+.lineinput{
+    
+    margin-bottom: 10px;
+
+}
+
+input {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+.mid {
+    text-align: center;
+}
+
+button {
+    
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: rgb(5, 1, 8);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+button:hover {
+background-color:  rgb(97, 36, 155);
+}
+
+.content{
+    
+    
+    margin-top: 15px;
+    margin-left: 0px;
+    background-color: #8b8787;
+    
+     
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+}
+
+table th{
+    
+    background-color: #8b8787;
+    
+
+}
+table th, td {
+    padding: 1px 5px;
+    text-align: center;
+   color: red;
+}
+
+table td img{
+    width: 20px;
+
+}
+
+.center {
+    text-align: center;
+}   
+
+

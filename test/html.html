@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    
+   
+</head>
+<body>
+
+    <header>
+        
+
+    <main>
+        <div class="title">
+            <h2>Ficha Cadrastal</h2>
+            
+        </div>
+
+        
+        <div class="card">
+            <form id="form">
+                <div class="lineinput">
+                    <label class="mov">Nome:</label>
+                    <input type="text" name="nome" id="nome" size="45" class="inputs required" onblur="validanome()">
+                </div>
+                
+                
+                <div class="lineinput">
+                    <label class="mov">RG:</label>
+                    <input type="text" name="rg" id="rg" maxlength="12">
+
+                    <label>cpf:</label>
+                    <input type="text" name="cpf" id="cpf" required  maxlength="14" size="16">
+                </div>
+    
+             
+    
+                <div class="lineinput">
+                    <label class="mov">cep:</label>
+                    <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);">
+
+                    <label>Estado:</label>
+                    <input type="text" name="uf" id="uf" size="5">
+
+                </div>
+                <div class="lineinput">
+                    <label class="mov">Endereço:</label>
+                    <input type="text" name="rua" id="rua" size="18">
+
+                    <label>Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" size="15"> 
+                </div>
+
+                <div class="lineinput">
+                    <label class="mov">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+
+                    <label>Sexo:</label>
+                    <select name="Sexo" id="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>    
+                </div>
+            
+                <div class="lineinput">
+                    <label class="mov">Complemento:</label>
+                    <input type="text" name="complemento" id="complemento" size="44">
+    
+                </div>
+
+                <div class="lineinput">
+                    <label class="mov">Data Nascimento:</label>
+                    <input type="date" name="data" id="data" maxlength="10" required onblur="validadata()">
+
+                </div>
+                
+                <div class="lineinput">
+                    <label class="mov">Situação Civil:</label>
+                    <label>
+                        <input type="radio" name="civil" id="civil" value="Solteiro" >Solteiro(a)
+                    </label>
+                    <label>
+                        <input class="mov4" type="radio" name="civil" id="civil" value="Casado" >Casado(a)
+                    </label>
+                    <label >
+                        <input class="mov5"type="radio" name="civil" id="civil" value="Viuvo">Viuvo(a)
+                    </div> 
+            </form>
+            
+            
+
+
+            
+            <div class="mid"> 
+                <button onclick="dado.salvar()">Enviar</button>
+                <button onclick="dado.cancelar()">Cancelar</button>
+                
+            </div>
+            
+            <div id="bottom-message"></div>
+            
+
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Nome</th>
+                    <th>RG</th>
+                    <th>CPF</th>
+                    <th>Cep</th>
+                    <th>Estado</th>
+                    <th>Endereço</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Sexo</th>
+                    <th>complemento</th>
+                    <th>data</th>
+                    <th>civil</th>
+                    <th class="center">ações</th>
+
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
